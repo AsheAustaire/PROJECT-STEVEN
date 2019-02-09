@@ -28,3 +28,6 @@ class App extends Component {
 }
 
 export default App;
+
+// Store hold all state data
+// Reducers call actions and i

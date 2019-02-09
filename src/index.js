@@ -8,8 +8,8 @@ import ReactDOM from 'react-dom';
 
 // Redux
 import { configureStore, getDefaultMiddleware } from 'redux-starter-kit'
-import loggerMiddleware from './middleware/logger'
-import monitorReducersEnhancer from './enhancers/monitorReducers'
+// import loggerMiddleware from './middleware/logger'
+// import monitorReducersEnhancer from './enhancers/monitorReducers'
 import rootReducer from './reducers'
 
 
@@ -17,9 +17,11 @@ import rootReducer from './reducers'
 export default function configureAppStore(preloadedState) {
   const store = configureStore({
     reducer: rootReducer,
-    middleware: [loggerMiddleware, ...getDefaultMiddleware()],
+    // middleware: [loggerMiddleware, ...getDefaultMiddleware()],
+    middleware: [...getDefaultMiddleware()],
     preloadedState,
-    enhancers: [monitorReducersEnhancer]
+    // enhancers: [monitorReducersEnhancer]
+    enhancers: []
   })
 
   if (process.env.NODE_ENV !== 'production' && module.hot) {
