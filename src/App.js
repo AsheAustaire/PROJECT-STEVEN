@@ -1,8 +1,10 @@
 import React, { Component } from 'react';
-import logo from './logo.svg';
+import logo from './fireball.png';
 import './App.css';
 
-let test = "PROJECT MUTHAFUKIN STEVEN";
+let test = "PROJECT STEVEN";
+
+console.log(Component);
 
 class App extends Component {
   render() {
@@ -13,14 +15,6 @@ class App extends Component {
           <p>
            {test}
           </p>
-          <a
-            className="App-link"
-            href="https://reactjs.org"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Learn React
-          </a>
         </header>
       </div>
     );
