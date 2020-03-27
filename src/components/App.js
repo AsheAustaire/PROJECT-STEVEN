@@ -1,10 +1,5 @@
 import React, { Component } from 'react';
-import logo from './fireball.png';
-import './App.css';
-
-let test = "PROJECT STEVEN";
-
-console.log(Component);
+import logo from '../assets/fireball.png';
 
 class App extends Component {
   render() {
@@ -12,9 +7,7 @@ class App extends Component {
       <div className="App">
         <header className="App-header">
           <img src={logo} className="App-logo" alt="logo" />
-          <p>
-           {test}
-          </p>
+          <p>PROJECT STEVEN</p>
         </header>
       </div>
     );
@@ -22,6 +15,3 @@ class App extends Component {
 }
 
 export default App;
-
-// Store hold all state data
-// Reducers call actions and i
